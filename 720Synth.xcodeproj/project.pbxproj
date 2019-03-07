@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A258779A47F0E11572C2662 /* Pods_720Synth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF0E359D7279CA2DC6FB701 /* Pods_720Synth.framework */; };
 		8812791C222182F80029191C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812791B222182F80029191C /* AppDelegate.swift */; };
 		8812791E222182F80029191C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812791D222182F80029191C /* ViewController.swift */; };
 		88127921222182F80029191C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8812791F222182F80029191C /* Main.storyboard */; };
 		88127923222182FA0029191C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88127922222182FA0029191C /* Assets.xcassets */; };
 		88127926222182FA0029191C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88127924222182FA0029191C /* LaunchScreen.storyboard */; };
+		88127936222183B90029191C /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812792D222183B80029191C /* Drawing.swift */; };
+		88127937222183B90029191C /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812792E222183B80029191C /* CGFloat+Extensions.swift */; };
+		88127938222183B90029191C /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812792F222183B80029191C /* Knob.swift */; };
+		88127939222183B90029191C /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127930222183B80029191C /* Double+Extensions.swift */; };
+		8812793A222183B90029191C /* SynthVC+UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127931222183B80029191C /* SynthVC+UIHelpers.swift */; };
+		8812793B222183B90029191C /* SynthVC+NoteNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127932222183B80029191C /* SynthVC+NoteNames.swift */; };
+		8812793C222183B90029191C /* glossButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127933222183B80029191C /* glossButton.swift */; };
+		8812793D222183B90029191C /* Knob+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127934222183B80029191C /* Knob+Touches.swift */; };
+		8812793E222183B90029191C /* KnobStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127935222183B90029191C /* KnobStyleKit.swift */; };
+		88127943222184DE0029191C /* GeneratorBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127942222184DE0029191C /* GeneratorBank.swift */; };
+		8812794A2221E6D60029191C /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881279492221E6D60029191C /* Conductor.swift */; };
+		8812794C2221E7190029191C /* FilterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812794B2221E7190029191C /* FilterSection.swift */; };
+		8812794E2221E74D0029191C /* Fatten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812794D2221E74D0029191C /* Fatten.swift */; };
+		881279502221E7740029191C /* MultiDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812794F2221E7740029191C /* MultiDelay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B95EF3DFF5B4F4C2B8C7D3C /* Pods-720Synth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-720Synth.release.xcconfig"; path = "Pods/Target Support Files/Pods-720Synth/Pods-720Synth.release.xcconfig"; sourceTree = "<group>"; };
+		765BDCD86BEA81B422BBFB0B /* Pods-720Synth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-720Synth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-720Synth/Pods-720Synth.debug.xcconfig"; sourceTree = "<group>"; };
 		88127918222182F80029191C /* 720Synth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 720Synth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8812791B222182F80029191C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8812791D222182F80029191C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +39,21 @@
 		88127922222182FA0029191C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88127925222182FA0029191C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88127927222182FA0029191C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8812792D222183B80029191C /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		8812792E222183B80029191C /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		8812792F222183B80029191C /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		88127930222183B80029191C /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		88127931222183B80029191C /* SynthVC+UIHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SynthVC+UIHelpers.swift"; sourceTree = "<group>"; };
+		88127932222183B80029191C /* SynthVC+NoteNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SynthVC+NoteNames.swift"; sourceTree = "<group>"; };
+		88127933222183B80029191C /* glossButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = glossButton.swift; sourceTree = "<group>"; };
+		88127934222183B80029191C /* Knob+Touches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Knob+Touches.swift"; sourceTree = "<group>"; };
+		88127935222183B90029191C /* KnobStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnobStyleKit.swift; sourceTree = "<group>"; };
+		88127942222184DE0029191C /* GeneratorBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorBank.swift; sourceTree = "<group>"; };
+		881279492221E6D60029191C /* Conductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
+		8812794B2221E7190029191C /* FilterSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSection.swift; sourceTree = "<group>"; };
+		8812794D2221E74D0029191C /* Fatten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fatten.swift; sourceTree = "<group>"; };
+		8812794F2221E7740029191C /* MultiDelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDelay.swift; sourceTree = "<group>"; };
+		DCF0E359D7279CA2DC6FB701 /* Pods_720Synth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_720Synth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A258779A47F0E11572C2662 /* Pods_720Synth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5442D7A3FF0F3C84C4CAA2DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				765BDCD86BEA81B422BBFB0B /* Pods-720Synth.debug.xcconfig */,
+				4B95EF3DFF5B4F4C2B8C7D3C /* Pods-720Synth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8812790F222182F80029191C = {
 			isa = PBXGroup;
 			children = (
 				8812791A222182F80029191C /* 720Synth */,
 				88127919222182F80029191C /* Products */,
+				5442D7A3FF0F3C84C4CAA2DA /* Pods */,
+				8F510789618027CE6C4D6429 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +98,9 @@
 		8812791A222182F80029191C /* 720Synth */ = {
 			isa = PBXGroup;
 			children = (
+				881279412221849A0029191C /* AudioSystem */,
+				8812793F222183C50029191C /* Extensions */,
+				88127940222183F70029191C /* Controls */,
 				8812791B222182F80029191C /* AppDelegate.swift */,
 				8812791D222182F80029191C /* ViewController.swift */,
 				8812791F222182F80029191C /* Main.storyboard */,
@@ -64,6 +111,49 @@
 			path = 720Synth;
 			sourceTree = "<group>";
 		};
+		8812793F222183C50029191C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8812792E222183B80029191C /* CGFloat+Extensions.swift */,
+				88127930222183B80029191C /* Double+Extensions.swift */,
+				88127932222183B80029191C /* SynthVC+NoteNames.swift */,
+				88127931222183B80029191C /* SynthVC+UIHelpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		88127940222183F70029191C /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				8812792D222183B80029191C /* Drawing.swift */,
+				88127933222183B80029191C /* glossButton.swift */,
+				8812792F222183B80029191C /* Knob.swift */,
+				88127934222183B80029191C /* Knob+Touches.swift */,
+				88127935222183B90029191C /* KnobStyleKit.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		881279412221849A0029191C /* AudioSystem */ = {
+			isa = PBXGroup;
+			children = (
+				88127942222184DE0029191C /* GeneratorBank.swift */,
+				881279492221E6D60029191C /* Conductor.swift */,
+				8812794B2221E7190029191C /* FilterSection.swift */,
+				8812794D2221E74D0029191C /* Fatten.swift */,
+				8812794F2221E7740029191C /* MultiDelay.swift */,
+			);
+			path = AudioSystem;
+			sourceTree = "<group>";
+		};
+		8F510789618027CE6C4D6429 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCF0E359D7279CA2DC6FB701 /* Pods_720Synth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8812792A222182FA0029191C /* Build configuration list for PBXNativeTarget "720Synth" */;
 			buildPhases = (
+				FC880A7F8388533F6F111072 /* [CP] Check Pods Manifest.lock */,
 				88127914222182F80029191C /* Sources */,
 				88127915222182F80029191C /* Frameworks */,
 				88127916222182F80029191C /* Resources */,
@@ -130,13 +221,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FC880A7F8388533F6F111072 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-720Synth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88127914222182F80029191C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88127939222183B90029191C /* Double+Extensions.swift in Sources */,
+				88127943222184DE0029191C /* GeneratorBank.swift in Sources */,
+				8812794C2221E7190029191C /* FilterSection.swift in Sources */,
+				8812793D222183B90029191C /* Knob+Touches.swift in Sources */,
+				881279502221E7740029191C /* MultiDelay.swift in Sources */,
+				8812793A222183B90029191C /* SynthVC+UIHelpers.swift in Sources */,
 				8812791E222182F80029191C /* ViewController.swift in Sources */,
 				8812791C222182F80029191C /* AppDelegate.swift in Sources */,
+				8812794A2221E6D60029191C /* Conductor.swift in Sources */,
+				8812794E2221E74D0029191C /* Fatten.swift in Sources */,
+				88127938222183B90029191C /* Knob.swift in Sources */,
+				8812793C222183B90029191C /* glossButton.swift in Sources */,
+				88127937222183B90029191C /* CGFloat+Extensions.swift in Sources */,
+				8812793B222183B90029191C /* SynthVC+NoteNames.swift in Sources */,
+				8812793E222183B90029191C /* KnobStyleKit.swift in Sources */,
+				88127936222183B90029191C /* Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +406,13 @@
 		};
 		8812792B222182FA0029191C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765BDCD86BEA81B422BBFB0B /* Pods-720Synth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XEDDMZW3M;
 				INFOPLIST_FILE = 720Synth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +426,13 @@
 		};
 		8812792C222182FA0029191C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B95EF3DFF5B4F4C2B8C7D3C /* Pods-720Synth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XEDDMZW3M;
 				INFOPLIST_FILE = 720Synth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
