@@ -26,6 +26,7 @@
 		8858ACDD224E546200E4C49A /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858ACDC224E546200E4C49A /* KeyboardViewController.swift */; };
 		8858ACDF224E5D1E00E4C49A /* ARSynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858ACDE224E5D1E00E4C49A /* ARSynthViewController.swift */; };
 		8858ACE12252855A00E4C49A /* SynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858ACE02252855A00E4C49A /* SynthViewController.swift */; };
+		88AE45AB227B94B20097992E /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE45AA227B94B20097992E /* Drawing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		8858ACDC224E546200E4C49A /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		8858ACDE224E5D1E00E4C49A /* ARSynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSynthViewController.swift; sourceTree = "<group>"; };
 		8858ACE02252855A00E4C49A /* SynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthViewController.swift; sourceTree = "<group>"; };
+		88AE45AA227B94B20097992E /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Drawing.swift; path = Controls/Drawing.swift; sourceTree = "<group>"; };
 		DCF0E359D7279CA2DC6FB701 /* Pods_720Synth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_720Synth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 				88127940222183F70029191C /* Controls */,
 				8812791B222182F80029191C /* AppDelegate.swift */,
 				8858ACDC224E546200E4C49A /* KeyboardViewController.swift */,
+				88AE45AA227B94B20097992E /* Drawing.swift */,
 				8858ACDE224E5D1E00E4C49A /* ARSynthViewController.swift */,
 				8812791D222182F80029191C /* ViewController.swift */,
 				8812791F222182F80029191C /* Main.storyboard */,
@@ -248,6 +251,7 @@
 				88127939222183B90029191C /* Double+Extensions.swift in Sources */,
 				88127943222184DE0029191C /* GeneratorBank.swift in Sources */,
 				8812794C2221E7190029191C /* FilterSection.swift in Sources */,
+				88AE45AB227B94B20097992E /* Drawing.swift in Sources */,
 				8858ACE12252855A00E4C49A /* SynthViewController.swift in Sources */,
 				881279502221E7740029191C /* MultiDelay.swift in Sources */,
 				8812793A222183B90029191C /* SynthVC+UIHelpers.swift in Sources */,
@@ -406,7 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3XEDDMZW3M;
 				INFOPLIST_FILE = 720Synth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -426,7 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3XEDDMZW3M;
 				INFOPLIST_FILE = 720Synth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

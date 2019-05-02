@@ -12,17 +12,12 @@ class SynthViewController: UIViewController {
 
     var conductor = Conductor.sharedInstance
 
-    @IBOutlet weak var AttackKnob: Knob!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-    
-    func setupKnobValues() {
-        AttackKnob.maximum = 3.0
-        AttackKnob.minimum = 0.2
-        AttackKnob.value = conductor.core.releaseDuration
+
         
     }
     
@@ -36,19 +31,6 @@ class SynthViewController: UIViewController {
      }
      */
     
-    @IBAction func reverb(_ sender: UIButton) {
-        conductor.reverb.start()
-    }
-}
 
-extension SynthViewController: KnobDelegate {
-    
-    func updateKnobValue(_ value: Double, tag: Int) {
-        conductor.core.releaseDuration = Double(AttackKnob.knobValue)
-        
-        
-        
-        
-    }
-}
+
 
