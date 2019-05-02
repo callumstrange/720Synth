@@ -45,4 +45,7 @@ Once you have completed these steps you should be able to connect your device an
 
 To do this simply select your device from the top left drop down box once it has been connected and then click the run button.
 
+I would like to thank AudioKit as the open source code for their synthesisers has been an incredible help while building this app so far. 
+
+I have made sure to not on the files that I have modified from existing code.
 
