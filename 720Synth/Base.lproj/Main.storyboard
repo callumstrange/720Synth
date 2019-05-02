@@ -17,54 +17,546 @@
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="248" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-Ps-e5P" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
-                                <rect key="frame" x="102" y="597" width="15" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="blkKeyUp_1"/>
-                                <connections>
-                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="4Zj-UG-N3n"/>
-                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZY-XX-heZ"/>
-                                    <action selector="keyReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xR3-cD-mkw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="254" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK8-3b-9n5">
-                                <rect key="frame" x="168" y="626" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="LgT-7M-Nvz"/>
-                                    <action selector="keyReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZ5-At-Xy3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mov-D7-Oco" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
-                                <rect key="frame" x="242" y="625" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="mono:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JHy-Yn-LjP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSr-WO-A6T" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
-                                <rect key="frame" x="320" y="625" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sw-S6-fYt">
-                                <rect key="frame" x="20" y="20" width="1072" height="569"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
                             </arscnView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="unR-yo-HAD">
+                                <rect key="frame" x="0.0" y="514" width="1112" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <segue destination="LnS-Ne-DLu" kind="embed" id="0Vf-EZ-nuB"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdW-5W-6jf">
+                                <rect key="frame" x="27" y="535" width="38" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rL-Oy-WmD" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="82" y="525" width="99" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="startSynth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UeW-jx-7iT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="ArkitView" destination="2sw-S6-fYt" id="jew-S5-s9N"/>
-                        <outlet property="button" destination="dj6-Ps-e5P" id="h9P-q0-icT"/>
+                        <outlet property="ArkitView" destination="2sw-S6-fYt" id="VS7-uL-aCI"/>
+                        <outlet property="StartStop" destination="xdW-5W-6jf" id="Gsa-pF-8v6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="Mhp-Nb-Gqs">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="zkH-EJ-uvg"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="KGK-ec-U8y">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="BYZ-38-t0r" id="Bz6-qD-IQ0"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-240" y="-68"/>
+            <point key="canvasLocation" x="-240.10791366906474" y="-68.345323741007192"/>
+        </scene>
+        <!--Controls-->
+        <scene sceneID="4b2-L6-3ax">
+            <objects>
+                <viewController id="FAL-KQ-ny6" customClass="SynthViewController" customModule="_20Synth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sAw-qj-1j7" customClass="ARSynthView">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brN-Wo-YXR">
+                                <rect key="frame" x="250" y="20" width="92" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mfq-JT-M80">
+                                <rect key="frame" x="250" y="90" width="376" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">To interact with the controls on the screen simply pinch the desired object to alter the size and the corresponding synth cntrol</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8DO-c9-1SB">
+                                <rect key="frame" x="200" y="0.0" width="11" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.90336044520000003" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80420590749999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="nXZ-ya-0qQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Controls" id="P3B-kg-1h8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ep-fS-IJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165.91726618705036" y="853.95683453237416"/>
+        </scene>
+        <!--Keyboard-->
+        <scene sceneID="Ucl-vQ-iZp">
+            <objects>
+                <viewController id="EsZ-Cq-lNk" customClass="KeyboardViewController" customModule="_20Synth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aB6-wc-Gzu">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="254" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK8-3b-9n5" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="182" y="111" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="mono:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="VVH-5s-Eaf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tao-yf-rsj" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="182" y="197" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="octaveUpPressed:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="TTq-PY-nPM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="oct -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lll-e2-ofV">
+                                <rect key="frame" x="17" y="207" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSr-WO-A6T" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="70" y="197" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="octaveDownPressed:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="1Ik-6K-A7K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="oct +" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxU-hw-tcL">
+                                <rect key="frame" x="134" y="207" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="248" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-Ps-e5P" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="234" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="lto-4V-pnc"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="gon-XF-ODW"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="swf-zq-byf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="250" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PXf-S7-KuH" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="275" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="0ie-ej-Av5"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchDragOutside" id="RjJ-SP-4fn"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="U4r-Er-2sF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="249" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9B-XI-ctA" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="257" y="0.0" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="LSv-Uh-FlO"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchDragOutside" id="OUn-JC-kOQ"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="U7v-JY-3zx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="252" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M03-Ez-X3a" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="317" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="wiI-UL-MTT"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="hDX-Ao-53C"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="vsa-Sw-FTs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="251" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eG-Ys-qpL" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="299" y="0.0" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="XfH-IN-QlY"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="Ehf-IG-Nnn"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchDragOutside" id="Oqt-LD-0tU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="253" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwG-xk-9Wu" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="359" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="S10-E6-4SQ"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="GkJ-qx-Is2"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="sBk-vm-TBi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="257" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3z-zt-STi" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="443" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="z4V-9R-d3o"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="FlZ-3s-je0"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="icQ-M3-NiL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="255" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="285-DG-50U" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="401" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="cQO-a1-vy7"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="9wg-hJ-QYK"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="kGV-KB-Fmb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="254" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNh-ac-l48" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="383" y="1" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="vrn-1o-54W"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="4ND-Zh-oEE"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="bml-s3-MZM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="256" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KS-al-7HC" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="425" y="1" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="WEc-hH-Xy1"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="LJh-I0-ZFx"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="TxV-Dp-KhG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="259" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFB-3y-7Gt" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="485" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="e8r-zI-Ihf"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="3K6-jY-xDJ"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="SNr-XW-Hvn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="258" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svb-0h-hxa" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="467" y="0.0" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="8Wp-Dm-raJ"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="cfg-hs-xMo"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="qjv-O0-zPW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="260" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtT-0W-j9W" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="527" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="e4q-y8-Exp"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="O6N-9y-vG1"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="r3R-HW-RI0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="262" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kM-Ur-CS5" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="569" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="kwB-qb-c4n"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="Woq-D3-UYh"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="tbj-uh-2x3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="261" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLp-Bg-2yF" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="548" y="0.0" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="Ipp-jJ-4Ub"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="4UU-Ud-R3j"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="Xq0-rl-IGn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="264" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXa-S3-ZSr" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="611" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="I5L-2r-JkW"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="Xw8-Sh-jkr"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="set-rz-193"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="263" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQ0-Md-w1f" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="592" y="0.0" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="AE2-wK-SRo"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="aZy-dk-5dD"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="f9u-2H-BAa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="265" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAH-BP-yLt" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="653" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="NLE-G7-RuG"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="4Rf-dW-qPE"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="DPg-yK-zdy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="267" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YA6-3b-N5s" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="695" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="YVw-rm-a6c"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="Yxo-WD-C06"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="a1j-90-j9R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="266" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vd6-kU-2OC" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="675" y="0.0" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="5g0-qy-anK"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="aAY-Zd-hFM"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="aXW-ij-YHN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="269" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lJ-f4-QY2" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="737" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="yxX-A7-GDO"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="o6f-bI-jjx"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="p5O-OR-Q3r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="268" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byf-Sd-VFF" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="719" y="1" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="tih-Oi-u1M"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="TUZ-W2-R9U"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="htX-ax-imA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="271" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYM-i2-Flk" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="779" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="K5c-NN-8Ze"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="m4s-GJ-9OT"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="x8S-FQ-6iY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="270" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hs-oE-EZd" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="763" y="1" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="K1S-ii-ULG"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="VOC-Wf-avf"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="aqF-N8-ICL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="272" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCa-qj-2al" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="821" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="AKU-YX-nyh"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="XlK-jp-D0x"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="oHE-rA-EVb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="274" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcd-D5-Wng" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="863" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="nbq-TG-PZh"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="C8w-vt-kvA"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="e2O-Sy-qlu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="276" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poB-fG-Zzz" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="905" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="cPl-rS-lvB"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="Ju8-5s-q5T"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="QDk-cE-Llk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="277" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esb-Kf-Bor" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="947" y="0.0" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="khM-x2-xsg"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="0mP-4V-Xky"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="cR5-fb-DtN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="279" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjY-Su-lm0" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="989" y="-1" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="oqf-eT-Dd1"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="Ocl-a4-hFX"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="scE-A2-oVY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="281" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p28-0q-un7" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="1031" y="-1" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="2AZ-We-fYe"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="hVC-1j-mju"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="y8I-sG-Jfa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="282" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lb-iB-1ML" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="1073" y="-1" width="40" height="265"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="keyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="T4l-Kv-j1O"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="FVt-rY-Ou3"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="XhH-4M-prl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="273" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1q-dQ-h6C" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="844" y="0.0" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="iy7-oJ-TpL"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="7Ka-lP-EIg"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="vO6-i5-omD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="275" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIk-O2-XjI" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="887" y="0.0" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="QJC-Vy-ez7"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="ReL-de-OTq"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="qAW-Jn-8Hg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="278" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJy-fl-Iqz" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="968" y="-2" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="uQT-kY-W79"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="OHv-Dp-eKR"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="rQe-ej-Hg4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="280" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnL-pR-EDO" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="1012" y="-1" width="36" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" image="blkKeyUp_1"/>
+                                <connections>
+                                    <action selector="keyPressed:" destination="EsZ-Cq-lNk" eventType="touchDown" id="lre-qy-TLv"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="GJP-aP-VCx"/>
+                                    <action selector="keyReleased:" destination="EsZ-Cq-lNk" eventType="touchUpOutside" id="Vxv-NT-Hvk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="enf-wd-mm2">
+                                <rect key="frame" x="0.0" y="67" width="231" height="6"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.90336044520000003" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb1-gJ-idz">
+                                <rect key="frame" x="130" y="121" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mov-D7-Oco" customClass="glossButton" customModule="_20Synth" customModuleProvider="target">
+                                <rect key="frame" x="70" y="111" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="hold:" destination="EsZ-Cq-lNk" eventType="touchUpInside" id="bzp-hh-NVb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGV-sJ-9fo">
+                                <rect key="frame" x="17" y="120" width="36" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80420590753424659" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="kKd-lI-a6U"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Keyboard" id="V5O-lG-HOT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bX8-0F-urD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="854"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="y6M-U3-o9a">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="LnS-Ne-DLu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FS1-up-V8k">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.90336044520547942" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EsZ-Cq-lNk" kind="relationship" relationship="viewControllers" id="1qc-Mr-c3k"/>
+                        <segue destination="FAL-KQ-ny6" kind="relationship" relationship="viewControllers" id="7c0-Yo-zhd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHP-Q9-qZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="460"/>
         </scene>
     </scenes>
     <resources>
-        <image name="blkKeyUp_1" width="15" height="98"/>
+        <image name="blkKeyUp_1" width="40" height="145"/>
+        <image name="keyUp_1" width="40" height="265"/>
     </resources>
 </document>

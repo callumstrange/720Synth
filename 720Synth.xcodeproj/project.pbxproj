@@ -13,20 +13,19 @@
 		88127921222182F80029191C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8812791F222182F80029191C /* Main.storyboard */; };
 		88127923222182FA0029191C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88127922222182FA0029191C /* Assets.xcassets */; };
 		88127926222182FA0029191C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88127924222182FA0029191C /* LaunchScreen.storyboard */; };
-		88127936222183B90029191C /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812792D222183B80029191C /* Drawing.swift */; };
 		88127937222183B90029191C /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812792E222183B80029191C /* CGFloat+Extensions.swift */; };
-		88127938222183B90029191C /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812792F222183B80029191C /* Knob.swift */; };
 		88127939222183B90029191C /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127930222183B80029191C /* Double+Extensions.swift */; };
 		8812793A222183B90029191C /* SynthVC+UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127931222183B80029191C /* SynthVC+UIHelpers.swift */; };
 		8812793B222183B90029191C /* SynthVC+NoteNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127932222183B80029191C /* SynthVC+NoteNames.swift */; };
 		8812793C222183B90029191C /* glossButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127933222183B80029191C /* glossButton.swift */; };
-		8812793D222183B90029191C /* Knob+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127934222183B80029191C /* Knob+Touches.swift */; };
-		8812793E222183B90029191C /* KnobStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127935222183B90029191C /* KnobStyleKit.swift */; };
 		88127943222184DE0029191C /* GeneratorBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88127942222184DE0029191C /* GeneratorBank.swift */; };
 		8812794A2221E6D60029191C /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881279492221E6D60029191C /* Conductor.swift */; };
 		8812794C2221E7190029191C /* FilterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812794B2221E7190029191C /* FilterSection.swift */; };
 		8812794E2221E74D0029191C /* Fatten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812794D2221E74D0029191C /* Fatten.swift */; };
 		881279502221E7740029191C /* MultiDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8812794F2221E7740029191C /* MultiDelay.swift */; };
+		8858ACDD224E546200E4C49A /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858ACDC224E546200E4C49A /* KeyboardViewController.swift */; };
+		8858ACDF224E5D1E00E4C49A /* ARSynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858ACDE224E5D1E00E4C49A /* ARSynthViewController.swift */; };
+		8858ACE12252855A00E4C49A /* SynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858ACE02252855A00E4C49A /* SynthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,20 +38,19 @@
 		88127922222182FA0029191C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88127925222182FA0029191C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88127927222182FA0029191C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8812792D222183B80029191C /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		8812792E222183B80029191C /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
-		8812792F222183B80029191C /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
 		88127930222183B80029191C /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		88127931222183B80029191C /* SynthVC+UIHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SynthVC+UIHelpers.swift"; sourceTree = "<group>"; };
 		88127932222183B80029191C /* SynthVC+NoteNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SynthVC+NoteNames.swift"; sourceTree = "<group>"; };
 		88127933222183B80029191C /* glossButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = glossButton.swift; sourceTree = "<group>"; };
-		88127934222183B80029191C /* Knob+Touches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Knob+Touches.swift"; sourceTree = "<group>"; };
-		88127935222183B90029191C /* KnobStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnobStyleKit.swift; sourceTree = "<group>"; };
 		88127942222184DE0029191C /* GeneratorBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorBank.swift; sourceTree = "<group>"; };
 		881279492221E6D60029191C /* Conductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
 		8812794B2221E7190029191C /* FilterSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSection.swift; sourceTree = "<group>"; };
 		8812794D2221E74D0029191C /* Fatten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fatten.swift; sourceTree = "<group>"; };
 		8812794F2221E7740029191C /* MultiDelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDelay.swift; sourceTree = "<group>"; };
+		8858ACDC224E546200E4C49A /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		8858ACDE224E5D1E00E4C49A /* ARSynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSynthViewController.swift; sourceTree = "<group>"; };
+		8858ACE02252855A00E4C49A /* SynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthViewController.swift; sourceTree = "<group>"; };
 		DCF0E359D7279CA2DC6FB701 /* Pods_720Synth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_720Synth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,11 +100,14 @@
 				8812793F222183C50029191C /* Extensions */,
 				88127940222183F70029191C /* Controls */,
 				8812791B222182F80029191C /* AppDelegate.swift */,
+				8858ACDC224E546200E4C49A /* KeyboardViewController.swift */,
+				8858ACDE224E5D1E00E4C49A /* ARSynthViewController.swift */,
 				8812791D222182F80029191C /* ViewController.swift */,
 				8812791F222182F80029191C /* Main.storyboard */,
 				88127922222182FA0029191C /* Assets.xcassets */,
 				88127924222182FA0029191C /* LaunchScreen.storyboard */,
 				88127927222182FA0029191C /* Info.plist */,
+				8858ACE02252855A00E4C49A /* SynthViewController.swift */,
 			);
 			path = 720Synth;
 			sourceTree = "<group>";
@@ -125,11 +126,7 @@
 		88127940222183F70029191C /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				8812792D222183B80029191C /* Drawing.swift */,
 				88127933222183B80029191C /* glossButton.swift */,
-				8812792F222183B80029191C /* Knob.swift */,
-				88127934222183B80029191C /* Knob+Touches.swift */,
-				88127935222183B90029191C /* KnobStyleKit.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -247,22 +244,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8858ACDF224E5D1E00E4C49A /* ARSynthViewController.swift in Sources */,
 				88127939222183B90029191C /* Double+Extensions.swift in Sources */,
 				88127943222184DE0029191C /* GeneratorBank.swift in Sources */,
 				8812794C2221E7190029191C /* FilterSection.swift in Sources */,
-				8812793D222183B90029191C /* Knob+Touches.swift in Sources */,
+				8858ACE12252855A00E4C49A /* SynthViewController.swift in Sources */,
 				881279502221E7740029191C /* MultiDelay.swift in Sources */,
 				8812793A222183B90029191C /* SynthVC+UIHelpers.swift in Sources */,
 				8812791E222182F80029191C /* ViewController.swift in Sources */,
 				8812791C222182F80029191C /* AppDelegate.swift in Sources */,
 				8812794A2221E6D60029191C /* Conductor.swift in Sources */,
 				8812794E2221E74D0029191C /* Fatten.swift in Sources */,
-				88127938222183B90029191C /* Knob.swift in Sources */,
 				8812793C222183B90029191C /* glossButton.swift in Sources */,
 				88127937222183B90029191C /* CGFloat+Extensions.swift in Sources */,
 				8812793B222183B90029191C /* SynthVC+NoteNames.swift in Sources */,
-				8812793E222183B90029191C /* KnobStyleKit.swift in Sources */,
-				88127936222183B90029191C /* Drawing.swift in Sources */,
+				8858ACDD224E546200E4C49A /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XEDDMZW3M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = 720Synth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,7 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XEDDMZW3M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = 720Synth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

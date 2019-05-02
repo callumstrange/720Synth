@@ -1,11 +1,17 @@
 //
 //  MultiDelay.swift
 //  720Synth
-//
-//  Created by callum strange on 23/02/2019.
+
+//  Created by Matthew Fecher on 1/5/16.
+//  Copyright © 2016 AudioKit. All rights reserved.
+
+//  Modified by callum strange on 23/02/2019.
 //  Copyright © 2019 callum strange. All rights reserved.
 //
 import AudioKit
+
+
+
 
 class MultiDelay: AKNode, AKInput {
     

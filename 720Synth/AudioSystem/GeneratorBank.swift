@@ -1,8 +1,9 @@
 //
 //  GeneratorBank.swift
 //  720Synth
-//
-//  Created by callum strange on 23/02/2019.
+//  Created by Matthew Fecher on 1/5/16.
+//  Copyright © 2016 AudioKit. All rights reserved.
+//  Modified by callum strange on 23/02/2019.
 //  Copyright © 2019 callum strange. All rights reserved.
 //
 
@@ -10,26 +11,13 @@ import AudioKit
 
 class GeneratorBank: AKPolyphonicNode {
     
-    func updateWaveform1(){
-        
-        vco1.index = (0...3).clamp(waveform1 + morph)
-        
-    }
-        
-        func updateWaveform2() {
-            vco2.index = (0...3).clamp(waveform2 + morph)
-        }
-        
-        var waveform1 = 0.0 { didSet { updateWaveform1() } }
-        var waveform2 = 0.0 { didSet { updateWaveform2() } }
-    
     
     var globalbend: Double = 1.0 {
         didSet {
             vco1.pitchBend = globalbend
-            vco2.pitchBend = globalbend
-            subOsc.pitchBend = globalbend
-            fmOsc.pitchBend = globalbend
+             vco2.pitchBend = globalbend
+             subOsc.pitchBend = globalbend
+             fmOsc.pitchBend = globalbend
         }
     }
     
@@ -43,7 +31,7 @@ class GeneratorBank: AKPolyphonicNode {
     }
     
     var offset2 = 0 {
-        willSet {
+         willSet {
             for noteNumber in onNotes {
                 vco2.stop(noteNumber: MIDINoteNumber(Int(noteNumber) + offset2))
                 vco2.play(noteNumber: MIDINoteNumber(Int(noteNumber) + newValue), velocity: 127)
@@ -51,15 +39,9 @@ class GeneratorBank: AKPolyphonicNode {
         }
     }
     
-    var morph: Double = 0.0 {
-        didSet {
-            updateWaveform1()
-            updateWaveform2()
-        }
-    }
     
     /// Attack time
-    var attackDuration: Double = 0.1 {
+  var attackDuration: Double = 0.1 {
         didSet {
             if attackDuration < 0.02 { attackDuration = 0.02 }
             vco1.attackDuration = attackDuration
